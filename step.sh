@@ -407,8 +407,7 @@ if [[ "${XCODE_BUILDER_ACTION}" == "archive" ]] ; then
       -exportArchive \
       -exportFormat ipa \
       -archivePath "${ARCHIVE_PATH}" \
-      -exportPath "${EXPORT_PATH}" \
-      -exportProvisioningProfile "Resolutiontube-CRM-InHouse-Provision-3-30"
+      -exportPath "${EXPORT_PATH}"
     fail_if_cmd_error "Xcode Export Archive action failed!"
     
     echo_string_to_formatted_output "* Archive build success"
